@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ventas a golpetazos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <input type="checkbox" id="aside-cart">
+    <label for="aside-cart" class="cart-toggle-btn">Carrito (<span id="contador">0</span>)</label>
+    <div class="header">
+        <div class="contenedor">
+            <h1>Ventas a golpetazos</h1>
+            <p>Cocina de contacto: platos que se piden con las manos y se comen con ganas.</p>
+        </div>
+    </div>
+
+    <main>
+        <h2>Productos</h2>
+        <div id="productos"></div>
+    </main>
+
+
+    <aside id="zona-carrito">
+        <h2>Carrito</h2>
+        <ul id="carrito"></ul>
+        <p class="total">Total: <strong id="total">0 €</strong></p>
+        <button id="checkout">Check Out</button>
+        <p id="estado-compra"></p>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
