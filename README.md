@@ -11,21 +11,25 @@ Proyecto de práctica de desarrollo web hecho con **HTML, CSS y JavaScript**.
 ## ✨ Funcionalidades
 
 - **Catálogo de productos** generado dinámicamente con JavaScript.
-- **Carrito con cantidades**: si añades el mismo plato varias veces, aparece en una sola línea con su cantidad (x1, x2, x3...) y el precio calculado por unidades.
-- **Botones en cada línea del carrito**: **+** para aumentar la cantidad y **X** para restarla.
+- **Carrito con cantidades**: si añades el mismo plato varias veces, sale en una sola línea (x1, x2, x3...).
+- **Botones + y X** en cada línea del carrito para subir o bajar la cantidad.
 - **Carrito lateral desplegable**, hecho con un `checkbox` y su `label` (sin JS para abrirlo y cerrarlo).
-- **Diseño adaptable al abrir el carrito**: el contenido se desplaza y se reorganiza en lugar de quedar tapado por el panel.
-- **Contador de unidades** y **total en euros** que se actualizan al añadir o quitar productos.
-- **Botón Check Out**, que vacía el carrito y muestra un mensaje de estado.
-- **Carrito persistente con `localStorage`**: los productos y sus cantidades se conservan aunque recargues o cierres la página.
+- **Diseño adaptable al abrir el carrito**: el contenido se desplaza en lugar de quedar tapado.
+- **Contador de artículos** y **total en euros** que se actualizan solos.
+- **Botón Check Out**, que guarda la compra en el historial y vacía el carrito.
+- **Botón Vaciar cesta**, que quita todos los productos de golpe.
+- **Historial de compras desplegable**: cada compra sale con su fecha y su total, y al pulsarla se ven sus productos.
+- **Descarga de recibos** en archivo de texto (`.txt`).
+- **Carrito e historial persistentes con `localStorage`**: se conservan aunque recargues o cierres la página.
+- **Estética de cartel de boxeo**, con botones que se hunden al pulsarlos.
 
 ## 🛠️ Tecnologías
 
 | Tecnología | Uso |
 |------------|-----|
 | HTML | Estructura de la página |
-| CSS | Estilos, maquetación (grid), carrito desplegable y adaptación del contenido con `:has()` |
-| JavaScript | Catálogo, lógica del carrito (cantidades) y persistencia con `localStorage` |
+| CSS | Estilos, maquetación y carrito desplegable |
+| JavaScript | Catálogo, carrito, historial y persistencia con `localStorage` |
 | Google Fonts | Tipografía Anton para los títulos y precios |
 
 ## 🎯 Objetivo del proyecto
@@ -34,8 +38,8 @@ Practicar los fundamentos del desarrollo web frontend:
 
 - Manipulación del DOM con JavaScript.
 - Renderizado de listas de datos.
-- Gestión del estado de un carrito de la compra, incluida la agrupación por cantidades.
-- Uso de métodos de arrays como `find`, `forEach` y `splice`.
+- Gestión del estado de un carrito de la compra.
+- Guardado de datos con `localStorage`.
 - Maquetación y diseño con CSS.
 
 ## 🔮 Mejoras pendientes
